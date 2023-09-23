@@ -1,8 +1,8 @@
 import "./App.css";
-import { FC } from "react";
+import { AppRouter } from "./components/AppRouter";
 
-const App: FC = () => {
-  return <div>works</div>;
+const App = () => {
+  return <AppRouter />;
 };
 
 export default App;
