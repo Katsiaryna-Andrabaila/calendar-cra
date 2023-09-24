@@ -1,8 +1,18 @@
+import { Layout } from "antd";
 import "./App.css";
 import { AppRouter } from "./components/AppRouter";
+import Navbar from "./components/Navbar";
+import { Content } from "antd/es/layout/layout";
 
 const App = () => {
-  return <AppRouter />;
+  return (
+    <Layout>
+      <Navbar />
+      <Content>
+        <AppRouter />
+      </Content>
+    </Layout>
+  );
 };
 
 export default App;
