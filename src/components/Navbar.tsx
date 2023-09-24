@@ -1,10 +1,11 @@
 import { Menu, Row } from "antd";
 import { Header } from "antd/es/layout/layout";
 import { useNavigate } from "react-router-dom";
+import { useTypedSelector } from "../hooks/useTypedSelector";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const isAuth = true;
+  const { isAuth } = useTypedSelector((state) => state.auth);
 
   const navItemsNotAuth = ["Log in"].map((el) => ({
     key: el,
