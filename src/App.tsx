@@ -1,3 +1,4 @@
+import "antd/dist/reset.css";
 import { Layout } from "antd";
 import "./App.css";
 import { AppRouter } from "./components/AppRouter";
