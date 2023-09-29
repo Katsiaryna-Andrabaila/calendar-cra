@@ -53,7 +53,7 @@ export const AuthActionCreators = {
   logout: () => (dispatch: AppDispatch) => {
     dispatch(AuthActionCreators.setIsLoading(true));
     localStorage.removeItem("username");
-    localStorage.removeItem("auth");
+    localStorage.removeItem("isAuth");
     dispatch(AuthActionCreators.setIsAuth(false));
     dispatch(AuthActionCreators.setUser({} as UserInterface));
   },
