@@ -18,7 +18,7 @@ const Navbar = () => {
   const navItemsAuth = ["Log out"].map((el) => ({
     key: el,
     label: el,
-    onClick: () => logout(),
+    onClick: logout,
   }));
 
   return (
