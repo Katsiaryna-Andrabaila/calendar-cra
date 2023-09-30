@@ -1,4 +1,4 @@
-import { Badge, Calendar } from "antd";
+import { Calendar } from "antd";
 import { CalendarInterface } from "../models/CalendarInterface";
 import { Dayjs } from "dayjs";
 import { formatDate } from "../utils/date";

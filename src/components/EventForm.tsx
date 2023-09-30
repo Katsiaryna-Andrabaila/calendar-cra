@@ -46,7 +46,14 @@ const EventForm = ({ guests, submit }: EventFormProps) => {
           onChange={(e) => setEvent({ ...event, description: e.target.value })}
         />
       </Form.Item>
-      <Form.Item label="Event date" name="date" rules={[rules.required()]}>
+      <Form.Item
+        label="Event date"
+        name="date"
+        rules={[
+          rules.required(),
+          rules.isDateAfter("You cannot select past date or today"),
+        ]}
+      >
         <DatePicker onChange={(date) => selectDate(date)} />
       </Form.Item>
       <Form.Item label="Event guest" name="guest" rules={[rules.required()]}>
